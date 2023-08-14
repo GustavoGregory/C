@@ -6,7 +6,7 @@
 
 int main()
 {
-    setlocale(LC_ALL, "Portuguese_Brasil");
+    setlocale(LC_ALL, "Portuguese");
     // imprimindo cabecalho bonito do jogo
     printf("\n\n");
     printf("          P  /_\\  P                              \n");
@@ -121,4 +121,6 @@ int main()
 
         printf("\nVocê perdeu! Tente novamente!\n\n");
     }
+    system("pause');
+    return 0;
 }
