@@ -97,6 +97,6 @@ int main()
 
     printf("Fim de jogo!\n");
 
-    // system("pause");
+    system("pause");
     return 0;
 }
