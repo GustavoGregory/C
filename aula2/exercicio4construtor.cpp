@@ -20,7 +20,10 @@ class Complexo
     float imag;
 
 public:
-    void inicializa(float real, float imag)
+    Complexo()
+    {
+    }
+    Complexo(float real, float imag)
     {
         (*this).real = real;
         (*this).imag = imag;
@@ -57,6 +60,7 @@ public:
     {
         printf("(%f,%f)p", modulo(), angulo());
     }
+
     string string_retangular()
     {
         string retorno = "";
@@ -124,13 +128,12 @@ Complexo divisao_complexos(Complexo complexo1, Complexo complexo2)
     resultado.atribui_imag(imag);
     return resultado;
 }
-
 //------------------------------------------------------------------------------------------------
 //---------------------------------------FUNÇÕES--------------------------------------------------
 //------------------------------------------------------------------------------------------------
 
-Complexo complexo1;
-Complexo complexo2;
+Complexo complexo1(3, 4);
+Complexo complexo2(6, 8);
 
 //------------------------------------------------------------------------------------------------
 //---------------------------------FUNÇÃO MAIN----------------------------------------------------
@@ -138,8 +141,6 @@ Complexo complexo2;
 
 int main()
 {
-    complexo1.inicializa(3, 4);
-    complexo2.inicializa(6, 8);
     complexo1.imprime();
     printf("\nModulo: %f\n", complexo1.modulo());
     printf("\nAngulo: %f\n", complexo1.angulo());
